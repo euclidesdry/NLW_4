@@ -78,7 +78,7 @@
     background-color: var(--app-orange-light);
 }
 
-.countDownButton:active {
+.countDownButton:not(:disabled):active {
     transform: scale(0.96);
     border-width: 0;
     transition: all ease .2s;
