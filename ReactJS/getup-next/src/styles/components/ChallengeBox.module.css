@@ -1,0 +1,69 @@
+.challengeBoxContainer {
+    height: 100%;
+
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.12);
+    padding: 1.5rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.challengeNotActive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.challengeNotActive strong{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.challengeNotActive p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.4;
+    max-width: 70%;
+    margin-top: 3rem;
+}
+
+.challengeNotActive p image {
+    margin-bottom: 1rem;
+}
+
+.challengeActive {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.challengeActive header{
+    color: var(--app-dark);
+    font-weight: 600;
+    padding: 0 2rem 1.5rem;
+    border-bottom: 1px solid var(--gray-line);
+}
+
+.challengeActive main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.challengeActive main strong {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--title);
+    margin: 1.5rem 0 1rem;
+}

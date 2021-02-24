@@ -4,6 +4,11 @@
     font-family: 'Rajdhani';
     font-weight: 600;
     color: var(--app-dark);
+    transition: color .3s ease;
+}
+
+.countdownContainerActive {
+    color: var(--app-orange);
 }
 
 .countdownContainer > div {
@@ -60,9 +65,17 @@
     transition: all ease .3s;
 }
 
-.countDownButton:hover {
+.countDownButtonActive {
+    background-color: var(--app-orange);
+}
+
+.countDownButton:not(:disabled):hover {
     background-color: var(--app-light-green);
     transform: scale(1.02);
+}
+
+.countDownButtonActive:not(:disabled):hover {
+    background-color: var(--app-orange-light);
 }
 
 .countDownButton:active {
@@ -71,7 +84,24 @@
     transition: all ease .2s;
 }
 
+.countDownButton span{
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: var(--app-light-green);
+    color: var(--white);
+    margin-left: 1rem;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
 .countDownButton:focus {
     border-width: 0 !important;
     outline: 0;
+}
+
+.countDownButton:disabled {
+    background-color: var(--white);
+    color: var(--app-light-green);
+    cursor: not-allowed;
+    border-bottom: 2px solid var(--app-light-green);
 }
