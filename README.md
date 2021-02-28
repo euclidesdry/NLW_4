@@ -3,4 +3,4 @@
 ### Phantom
 #### Phoenix
 Estudando com o bootcamp da RocketSeat Next Level Week #4
-![](/readme/img/course-app-home.png)
+![](/.readme/img/course-app-home.png)
